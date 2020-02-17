@@ -10,4 +10,11 @@ describe('Account', () => {
     });
   });
 
+  describe('deposit', () => {
+    it('should add a given amount to the users total balance', () =>{
+      expect(account.deposit(1000)).toEqual("1000.00")
+      expect(account.deposit(1000)).toEqual("2000.00")
+    })
+  })
+
 });
