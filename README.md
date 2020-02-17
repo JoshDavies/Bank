@@ -1,13 +1,10 @@
 # Bank
 
-
 ## Quick-start
 - to Run tests: Open the 'SpecRunner.html' file in a Chrome browser (copy the file path).
-```
 
 ----------
 ## User Stories
-
 ```
 as a new user
 I want to create an account that tracks my current bank balance.
@@ -23,8 +20,8 @@ I want to view a print out of my history of previous deposits and withdrawals (r
 
 as an account holder
 I want to see the date when each transaction was made.
-
 ```
+
 ## Class Diagram (UML)
 ### Objects:
 - Account. @statement{ transaction = { date: , credit: , debit: , balance: } }
