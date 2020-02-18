@@ -24,10 +24,10 @@ describe('Account', () => {
     })
   });
 
-  describe('todaysDate', () => {
+  describe('formatDate', () => {
     it('should return the date of the transaction: dd/mm/yyyy', () => {
       var date = new Date(2012, 0, 10);
-      expect(account.todaysDate(date)).toEqual('10/01/2012');
+      expect(account.formatDate(date)).toEqual('10/01/2012');
     })
   });
 
