@@ -26,14 +26,16 @@ describe('Account', () => {
 
   describe('todaysDate', () => {
     it('should return the date of the transaction: dd/mm/yyyy', () => {
-      expect(account.todaysDate()).toEqual('17/02/2020');
+      var date = new Date(2012, 0, 10);
+      expect(account.todaysDate(date)).toEqual('10/01/2012');
     })
   });
 
-  // describe('recordTransaction', () => {
-  //   it('should track the date the transaction was made', () => {
+  describe('recordTransaction', () => {
+    it('should track the date the transaction was made', () => {
+      console.log(account.recordTransaction(1000))
   //     expect(account.recordTransaction(1000)).toEqual('10/01/2012 || 1000.00 || || 1000.00')
-  //   })
-  // });
+    })
+  });
 
 });
